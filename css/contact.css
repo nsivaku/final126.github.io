@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&display=swap");
+
+:root {
+  --nav-text: white;
+  --nav-background: #02182b;
+  --accent-color: #3498db;
+}
+
+.contact-section {
+  background-color: var(--nav-background);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-information {
+  margin-bottom: 1rem;
+}
+
+.contact-information h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.contact-information p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+.contact-form-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--nav-background);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem 1rem;
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.submit-button {
+  background-color: var(--nav-background);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+@media (min-width: 800px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-information {
+    margin-bottom: 0;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    height: 500px;
+  }
+
+  .contact-form-container {
+    width: 60%;
+  }
+
+  .contact-information h1 {
+    font-size: 3rem;
+  }
+}

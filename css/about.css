@@ -27,10 +27,9 @@
 }
 
 .mission-statement h2 {
-  color: white;
-  margin-top: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
 }
 
 .mission-statement p {
@@ -67,13 +66,9 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
   text-align: center;
 }
 
-.board-card:hover {
-  transform: translateY(-10px);
-}
 
 .board-img {
   width: 100%;
@@ -86,12 +81,8 @@
   height: 300px;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.5s ease;
 }
 
-.board-card:hover .board-img img {
-  transform: scale(1.05);
-}
 
 .board-card h3 {
   color: var(--nav-background);
@@ -105,7 +96,6 @@
   font-weight: 500;
 }
 
-/* Teams Section */
 .teams-section {
   background-color: #f5f7fa;
   padding: 4rem 2rem;
@@ -135,11 +125,6 @@
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.team-type-card:hover {
-  transform: translateY(-5px);
 }
 
 .team-type-card h3 {
@@ -151,15 +136,6 @@
   padding-bottom: 0.75rem;
 }
 
-.team-type-card h3::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 3px;
-  background-color: var(--accent-color);
-}
 
 .team-type-card ul {
   padding-left: 1.5rem;
@@ -194,10 +170,6 @@
 
   .about-mission h1 {
     font-size: 3.5rem;
-  }
-
-  .mission-statement h2 {
-    font-size: 1.8rem;
   }
 
   .mission-statement p {
