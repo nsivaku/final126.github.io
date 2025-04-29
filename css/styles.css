@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&display=swap');
+
+:root {
+  --nav-text: white;
+  --nav-background: #02182B;
+  --accent-color: #3498db;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--nav-background);
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--nav-background);
+}
+
+.logo {
+  margin: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  vertical-align: top;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--nav-background);
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  color: var(--nav-text);
+  transition: all 0.3s ease;
+}
+
+.navbar-links li:hover, .navbar-links li:focus {
+  background-color: #173c5d;
+}
+
+.toggle-button {
+  position: absolute;
+  top: calc(1.2rem + 5px);
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--nav-text);
+  border-radius: 10px;
+}
+
+.navbar-links {
+  display: none;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+.navbar-links ul {
+  width: 100%;
+  flex-direction: column;
+}
+
+.navbar-links ul li {
+  text-align: center;
+}
+
+.navbar-links ul li a {
+  padding: .7rem 1rem;
+}
+
+.navbar-links.active {
+  display: flex;
+  width: 100%;
+}
+
+/* Home Content Styles - Mobile First */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.home-text {
+  margin-bottom: 2rem;
+}
+
+.home h1 {
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  margin: 0;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.home h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: var(--accent-color);
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.globe-image {
+  width: 80%;
+  max-width: 300px;
+  margin-top: 1.5rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Tenets Section */
+.tenets-section {
+  background-color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.tenets-section h2 {
+  color: var(--nav-background);
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.tenets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tenet-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tenet-card:hover {
+  transform: translateY(-5px);
+}
+
+.tenet-card h3 {
+  color: var(--accent-color);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.tenet-card p {
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer {
+    background-color: var(--nav-background);
+    color: white;
+    padding: 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-info h3 {
+    color: var(--accent-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+  }
+  
+  .social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+  }
+
+/* Desktop Styles */
+@media (min-width: 800px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #02182B;
+    height: 80px;
+    font-size: 16px;
+    padding: 0 1rem;
+  }
+  
+  .toggle-button {
+    display: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
+    width: auto;
+    font-size: 18px;
+  }
+  
+  .navbar-links ul {
+    flex-direction: row;
+  }
+  
+  .navbar-links li:hover, .navbar-links li:focus {
+    background-color: var(--nav-background);
+    font-weight: 500;
+  }
+  
+  .navbar-links ul li a {
+    letter-spacing: 0.7px;
+  }
+  
+  .navbar-links li a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Desktop Home Layout */
+  .home {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: calc(100vh - 80px);
+    margin-top: 0;
+    text-align: left;
+  }
+  
+  .home-text {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  
+  .home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home h2 {
+    font-size: 1.8rem;
+  }
+  
+  .globe-image {
+    width: 40%;
+    max-width: 450px;
+    margin-top: 0;
+  }
+  
+  /* Desktop Tenets Layout */
+  .tenets-section {
+    padding: 5rem 10%;
+  }
+  
+  .tenets-section h2 {
+    font-size: 2.2rem;
+  }
+  
+  .tenets-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .tenet-card {
+    width: 48%;
+    padding: 2rem;
+  }
+  
+  .tenet-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-icons {
+    align-self: auto;
+  }
+}
